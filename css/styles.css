@@ -510,7 +510,7 @@ section {
   align-items: center;
   transition: opacity 250ms ease-in-out;
 
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 }
 
