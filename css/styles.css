@@ -643,11 +643,11 @@ section {
   fill: transparent;
   margin-right:8px;
 }
-.checkbox-input:checked + .privacy-label .span-privacy-icon {
+.check-input:checked + .privacy-label .span-privacy-icon {
   background-color: #404bbf;
   border: none;
 }
-.checkbox-input:checked + .privacy-label .span-privacy-icon .icon {
+.check-input:checked + .privacy-label .span-privacy-icon .icon {
   fill: #F4F4FD;
 }
 .privacy-link{
