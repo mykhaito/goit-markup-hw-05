@@ -576,25 +576,26 @@ section {
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
   min-width: 360px;
   height: 40px;
 }
-.input-container:hover,.input-container:focus{
-  border-color:#4D5AE5;
+.input-container:hover .input-customized,
+.input-container:focus-within .input-customized {
+  border-color: #4D5AE5;
 }
-.input-container:hover .icon,.container:focus .icon{
-  fill:#4D5AE5;
+.input-container:hover .icon,
+.input-container:focus-within .icon {
+  fill: #4D5AE5;
 }
-.input-container .icon {
+.input-container svg {
   top: 50%; 
+  left: 16px;
   width: 12px;
   height: 12px;
-  margin-left:19px;
   fill: #2E2F42;
   position: absolute;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-customized{
   width: 100%;
@@ -603,6 +604,9 @@ section {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-form-comment{
   margin-bottom: 16px;
@@ -619,12 +623,12 @@ section {
   align-items: center;
 }
 .span-privacy-icon{
-  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
