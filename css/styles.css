@@ -634,12 +634,12 @@ section {
   fill: transparent;
   margin-right:8px;
 }
-.privacy-label:checked + .span-privacy-icon {
+input:checked + .privacy-label .span-privacy-icon {
   background-color: #404bbf;
   border: none;
 }
-.privacy-label:checked + .span-privacy-icon .icon {
-  fill: #F4F4FD;
+input:checked + .privacy-label .span-privacy-icon .icon {
+fill: #F4F4FD;
 }
 .privacy-link{
   color: #4d5ae5;
