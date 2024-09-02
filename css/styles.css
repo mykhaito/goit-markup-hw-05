@@ -619,7 +619,6 @@ section {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
   align-items: center;
 }
 .privacy-link{
@@ -666,10 +665,6 @@ section {
 .input-comment-form:focus,.input-comment-form:hover{
   border-color: #4D5AE5;
 }
-
-
-
-
 .span-privacy-icon{
   width: 16px;
   height: 16px;
@@ -682,14 +677,8 @@ section {
   fill: transparent;
   margin-right:8px;
 }
-
-
-
-
-input:checked + .privacy-label .span-privacy-icon .icon {
-  fill: #f4f4fd;
-}
 input:checked + .privacy-label .span-privacy-icon {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
