@@ -79,9 +79,6 @@ section {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-nav .nav-menu-items:first-child {
-  color: #404bbf;
-}
 .nav-menu-items:focus,
 .nav-menu-items:hover {
   color: #404bbf;
@@ -458,7 +455,6 @@ section {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #FFFFFF;
-  margin-right: 24px;
   box-sizing: border-box; 
   }
 .subscribe-input::placeholder{
@@ -500,7 +496,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 .modal{
@@ -522,6 +519,7 @@ section {
 }
 .modal-overlay.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 .close-button{
